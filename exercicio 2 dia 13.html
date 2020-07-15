@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Exercício 2: Crie uma função que passe uma letra e depois um texto, ela retorne quantas vezes aquela letra se 
+        // repete dentro do texto
+
+        var letra = prompt('Digite uma letra: ');
+        var texto = prompt('Digite um texto: ');
+        var contador = 0;
+       
+        for (letrinha of texto){
+            if (letra == letrinha){
+                contador++;
+            }   
+        }
+            alert(`A letra ${letra} repetiu: ${contador} vezes`);
+        
+    </script>
+    
+</body>
+</html>

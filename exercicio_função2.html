@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //exercicio 2
+    // Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+
+    // function nomefunção(a,b,c){
+    // }
+    // quando eu chamar a função novamente(o que tiver nesse espaço antes da virgula sera a, no meio da virgula sera b
+    // ,e depois da virgula por ultimo sera c)
+
+function pares(x, y) {
+   while(x != y){
+       if( x %2 == 0){
+           document.write(x + '<br>');
+       }
+       x++
+   }     
+    }
+    var n1 = parseInt(prompt('Digite um número: '));
+    var n2 = parseInt(prompt('Digite outro número: '));
+
+    // n1 entra como x, e n2 entra como y
+    // x = n1, y=n2
+    pares(n1,n2);
+
+    </script>
+    
+</body>
+</html>

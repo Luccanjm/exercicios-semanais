@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Exercício 1: Crie uma função que receba 2 números, e retorne para o usuário qual o menor número.
+        var numero1 = parseInt(prompt("Digite um número: "));
+        var numero2 = parseInt(prompt("Digite outro número: "));
+        if (numero1 < numero2){
+        alert(`O menor número é: ${numero1}`);
+        }else if(numero2 < numero1){
+        alert(`O menor número é: ${numero2}`);
+        }else if(isNaN(numero1) ){
+        alert("Número inválido, refaça e não se esqueça de digitar um número.");
+        }else if(isNaN(numero2) ){
+        alert("Número inválido, refaça e não se esqueça de digitar um número.");
+        }else{
+        alert('Ambos são iguais.');
+        }
+
+    </script>
+    
+</body>
+</html>

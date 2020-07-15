@@ -1,0 +1,18 @@
+O objetivo do nosso nivelamento é você aprender a motivação dos seguintes assuntos:
+
+o que é variável e constants, para que serve. OK.
+o que é condicionais (if, else, else if) OK.
+o que é loop (for, while, for in, for of) OK.
+o que é input e output (alert, console.log, prompt) OK.
+o que é escopos (globais e locais.) OK
+o que é array. OK
+o que é objeto. OK
+o que é funções. OK
+o que é tipo de dados. OK
+como pensar pensar de maneira lógica. OK
+
+---- 
+
+plus++
+
+

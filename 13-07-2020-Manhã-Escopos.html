@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopos</title>
+</head>
+
+<body>
+    <script>
+        // // AQUI É UM ESCOPO GLOBAL
+        // var nome = "fulano <br> ";
+
+        // document.write(nome);
+        // //GERALMENTE CHAMAMOS ISSO DE FUNCTION SCOPE
+        // function teste(){
+        // //AQUI DENTRO É UM ESCOPO LOCAL
+        // document.write(nome);
+        // var idade= 25;
+        // }
+
+        // document.write(nome);
+        // // teste();
+        // var nome = "ciclano global <br>";
+        // function teste() {
+        //     var nome = "ciclano da função// local <br>";
+        //     document.write(nome);
+
+        // }
+        // teste(); // ciclano da função
+        // document.write(nome); // ciclano global
+        //BLOCK SCOPE
+        // const idade =25 // nao tem como alterar
+
+        // var usuario = 'lucca <br>';
+        // let nome = 'fulano <br>'; // 
+        // document.write(nome);
+        // if (true) { // aqui é GLOBAL, NÃO É LOCAL
+        //    let nome = 'ciclano <br>';
+        // //    var usuario = 'lucca2 <br>'; //nao vai funcionar pois ja existe a variavel usuario 
+        //     document.write(nome);
+
+        // }else{
+        //     nome = 'Beltrano <br>';
+        // }
+        // document.write(nome);
+        var nome = 'fulano';
+        const pessoa = { nome: 'Beltrano', idade: 21 };
+        const pular = '<br>';
+
+        document.write(nome);
+        document.write(pular);
+        document.write(JSON.stringify(pessoa));
+        document.write(pular);
+        var nome2 = nome;
+        const pessoa2 = pessoa;
+        document.write('Segunda Parte <br>');
+        document.write(nome2);
+        document.write(pular);
+        document.write(JSON.stringify(pessoa2));
+        document.write(pular);
+        document.write('Terceira Parte <br>');
+        nome2 ="Ciclano";
+        pessoa2.nome="Ciclano"; //muda a referencia, NAO o valor, nao é uma copia/clone, é o mesmo objeto;
+        pessoa2.idade=24;
+        document.write(nome);
+        document.write(pular);
+        document.write(JSON.stringify(pessoa));
+        document.write(pular);
+
+        //AGORA VAMOS APRENDER A CLONAR O OBJETO
+        var pessoa3 = Object.assign({},pessoa); // clonei pessoa, outro objeto agora
+        var pessoa4 = Object.assign({sexo: 'Masculino'},pessoa); //clonei e adicionei o sexo, ao pessoa4, se nao tem inclui, se tem, ele substitui
+        
+
+
+    </script>
+
+</body>
+
+</html>

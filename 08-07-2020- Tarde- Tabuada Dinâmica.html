@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="lightblue"> 
+    <div style="text-align:center". style.color="red"> 
+    <h1><font color="#6495ED"> Tabuada Dinâmica </font> </h1>
+    <script>
+         
+    /*
+        var nota = parseInt(prompt('Digite a nota: ')) ;
+        if(nota >= 60 ){
+            document.write("Aprovado."+ "<br>");
+
+        } else if (nota >= 40 && nota < 60){
+            document.write("Recuperação."+ "<br>");
+
+        }else{
+            document.write("Reprovado."+ "<br>");
+        }
+        // for -> 1° declaração/variavel / 2°condição/if / 3° incremental/do 
+        for(var i=0 ; i < 10 ; i++ ){
+            //i é igual a 0, e se i for menor que 10, acrescente +1 no i
+            document.write("Sou a posição - " + i + "<br>");
+        }
+        console.log ("Saiu do looping.");
+        var cont = 1;
+        while (cont < 10) {
+            document.write("Sou a posição." + cont+"<br>");
+            cont++;
+        }
+    var contd =11;
+    do{
+        document.write("Fui executado. DO");
+    }while(contd < 10){
+        document.write("Fui executado. WHILE");
+        contd++;
+    }
+     EXERCÍCIO:
+     EU COMO USUÁRIO QUERO UMA SISTEMA QUE GERE UMA TABUADA DINÂMICA. EU
+     QUERO PODER INFORMAR O NUMERO QUE VAI SER MULTIPLICADO E TAMBEM O VALOR ATE QUANTO EU 
+     QUERO MULTIPLICAR. SEMPRE INICIAR EM ZERO A MINHA TABUADA.
+     */
+
+    alert("Tabuada Dinâmica");
+
+    var numero = parseInt(prompt("Informe um número para fazer a tabuada dinâmica: "));
+    var contador =0;
+    var resultado =0 ;
+    var numero2 = parseInt(prompt("Informe quantas vezes deseja multiplicar: "));
+    numero2++;
+   
+        for(var contador = 0 ; contador < numero2 ; contador++){
+            resultado = numero * contador ;
+         document.write(numero + "X" + contador + "=" + resultado  );
+
+         if(resultado%2==0){
+             document.write(" Par"+ "<br>");
+         }else {
+             document.write(" Ímpar" + "<br>");
+                }
+
+        } 
+          
+        // while(contador < 11){
+        //    resultado = numero * contador ;
+        //     document.write(numero + "X" + contador + "=" + resultado  + "<br>");
+        //     contador++;
+        // }
+        
+
+
+        
+
+    </script>
+
+</div>
+
+</body>
+
+</html>

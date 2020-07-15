@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+
+</head>
+<body>
+
+    
+<script>
+/* Planejamento:
+    Pedir lanche delivery:
+
+    1°-Criar variaveis quantidade_comida, cod_comida,
+    cod_bebida,quantidade_bebida, t1, t2, total  -> OK
+    2°-Usuário inserir código comida -> OK
+    3°- Usuário inserir código bebida -> OK
+    4° - Usuário inserir quantidade comida -> OK
+    5° - Usuário inserir quantidade bebida -> ok
+    6°-Adicionar switch da  comida case 1, case 2, default -> OK
+    7°- Adicionar calculo 1 -> ok
+    8°-Adicionar switch da bebida case 1, case 2, default -> ok
+    9°- Adicionar calculo 2 -> ok
+    10°-Adicionar calculo final -> ok 
+    11°-Mostrar valor final para o usuário -> ok
+    */
+alert('Delivery, Taxa de entrega fixa: 10,00 // Faça seu pedido: ');
+var cod_comida = parseInt(prompt('Cód. 1 Misto Quente (3.00) | Cód. 2 Cachorro-Quente (4.00):// Digite o código do produto desejado: '));
+var quantidade_comida = parseInt(prompt('Digite a quantidade: '));
+var cod_bebida = parseInt(prompt('Cód. 1 Suco (4.00) | Cód. 2 Refrigerante (3.00): // Digite o código do produto desejado: '))
+var quantidade_bebida = parseInt(prompt('Digite a quantidade: '));
+
+switch(cod_comida){
+    case 1 :
+        var t1 = 3.00 * quantidade_comida ;
+        document.write('Misto quente: ' + quantidade_comida + 'x = R$' + t1 +'<br>');
+    break;
+
+    case 2 :
+        var t1 = 4.00 * quantidade_comida ;
+        document.write('Cachorro-quente: ' + quantidade_comida + 'x = R$' + t1 +'<br>');
+    break;
+    
+    default:
+    alert('Código da comida inexiste, refaça o pedido.' );
+
+}
+switch(cod_bebida){
+    case 1: 
+        var t2 = 4.00 * quantidade_bebida ;
+        document.write('Suco: ' + quantidade_bebida + 'x = R$' + t2 +'<br>');
+    break;
+    case 2:
+        var t2 = 3.00 * quantidade_bebida ;
+        document.write('Refrigerante: ' + quantidade_bebida + 'x = R$' + t2 +'<br>');
+    break;
+
+    default:
+    alert('Código da bebida inexiste, refaça o pedido.' );
+
+}
+var total = t1+ t2 + 10.00;
+document.write('+ R$ 10,00 de taxa <br> Total: R$' + total);
+
+
+
+
+
+</script>
+    
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz ou array ou vetor ou lista</title>
+</head>
+<body>
+    <script>
+        /*
+        Fila: Primeiro que entra é o primeiro que sai
+        Pilha: Primeiro que entra é o ultimo que sai
+        */
+            var fruteira = ["Banana","Maçã","Abacaxi","Pêra","Mamão"] //array
+            var fila = ["Lucca", "Mel","Mariane","Paulo","Flor","Meigue","Yasmin","Fabricio","Flavia"]
+            // typeof(variavel) -> diz  qual o tipo do item typeof(variavel)
+            //variavel.lenght ->mostra o tamanho da variavel
+            //variavel.sort() ->sort -> ordem alfabetica
+            //variavel.reverse() -> inverte a ordem q esta o array
+            //variavel.shift()-> tira o primeiro elemento do array
+            //variavel.pop() -> tira o ultimo elemento do array
+            //varuavel.push('elemento') -> adicionar um elemento por vez
+            //variavel [numero] = 'elemento' -> para adicionar um elemento na posição especifica desejada
+            //variavel.splice(a partir de qual posição quer remover, quantidade de elementos que quer remover,'novo item')
+            //por exemplo fila.splice(3,2,'vandinha', 'juliana') -> irá remover paulo, flor e mudar para vandinha, juliana
+            //variavel.join() -> junta com uma virgula, se for variavel.join(''), ele junta a palavra sem nd dentro,
+            // se for variavel.join('@') ele vai colocar um arroba entre
+            
+            // var teste =['nome','idade','genero'];
+            // teste['nome'] = prompt('Digite seu nome: '); // adiciona um nome ao elemento nome da variavel teste
+            // teste['idade'] = parseInt(prompt('Digite sua idade: ')); // adiciona um numero ao elemento idade da variavel teste
+            // teste['genero'] = prompt('Digite seu gênero: ');// adiciona um nome ao elemento genero da variavel teste
+
+            
+            var saladeDeFrutas = [];
+            var adicionarMaisFruta = true;
+            alert("Bem vindos a barraca de salada de frutas do Lucca");
+            var nome = prompt('Digite seu nome: ');
+
+           
+            var fruta = prompt('Escolha uma fruta: ');
+            saladeDeFrutas.push(fruta);
+
+            while(adicionarMaisFruta){
+                var resposta = prompt('Deseja adicionar mais frutas? - sim ou não');
+                console.log(resposta);
+
+                 if(resposta.toLowerCase() == 'sim'){
+                    fruta = prompt ('Escolha uma fruta: ');
+                    saladeDeFrutas.push(fruta);
+                 } else if(resposta.toLowerCase() == 'não'){
+                 adicionarMaisFruta = false;
+                 } else{
+                 alert('Resposta inválida');
+                 adicionarMaisFruta=true;
+                 }
+            }
+            document.write('Sua salada de fruta está pronta <br> <br> Frutas: <br>' );
+            
+            // for(var i= 0; i < saladeDeFrutas.length; i++ ){
+            //     document.write(saladeDeFrutas[i] + '<br>');
+            // }
+         
+            // for(frutinha of saladeDeFrutas){ // para cada frutinha dentro de saladaDeFrutas
+            //     document.write(frutinha + '<br>') //digite o que esta dentro de frutinha e pule um espaço
+            // }//repita até acabar os itens dentro de saladaDeFrutas
+
+            for(fruto in saladeDeFrutas){ //devolve a propriedade
+                document.write(saladeDeFrutas[fruto] + '<br>')
+            }
+
+             var teste3 = 'porta,janela,mesa,pia,vaso';
+             // teste3.split(',');
+             // vai ficar: teste3= ['porta','janela','mesa','pia','vaso']
+    </script>
+
+    
+</body>
+</html>

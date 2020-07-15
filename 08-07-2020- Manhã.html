@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- codificação teclado/dicionario brasileiro -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- para converter quando o site for aberto em mobile -->
+    <title>08-07-2020 - Manha </title>
+</head>
+
+<body>
+
+
+    <script>
+        // ||  &&   ==  =
+        // EPER - ENTENDER, PLANEJAR, EXECUTAR E REVISAR
+        // LEVANTAMENTO DE REQUISISTOS == TUDO O QUE O CLIENTE QUER NO SEU PROGRAMA/SITE
+        /* Criar um sistema que recebe 3 notas
+                Recebe 3 notas
+                Faz a media
+                Se for menor que 60, informar que foi reprovado
+                Se for maior que 60, informar que foi aprovado
+                */
+        var primeiraNota = parseInt(prompt('Digite a primeira nota: '));
+        var segundaNota = parseInt(prompt('Digite a segunda nota: '));
+        var terceiraNota = parseInt(prompt('Digite a terceira nota: '));
+        const pularLinha = '<br>'; // constante. uma constante não pode ter seu valor alterado, já uma variavel pode.
+        
+                if (isNaN(primeiraNota)) {
+            primeiraNota = 0;
+            document.write('<h3 style="color: red;"> Primeira nota: Falta </h3> ' + pularLinha);
+        } else {
+            document.write('Primeira nota: ' + primeiraNota + pularLinha);
+        }
+
+        if (isNaN(segundaNota)) {
+            segundaNota = 0;
+            document.write('<h3 style="color: red;"> Segunda nota: Falta </h3>' + pularLinha);
+        } else {
+            document.write('Segunda nota: ' + segundaNota + pularLinha);
+        }
+
+        if (isNaN(terceiraNota)) {
+            terceiraNota = 0;
+            document.write('<h3 style="color: red;"> Terceira nota: Falta </h3>' + pularLinha);
+        } else{
+            document.write('Terceira nota: ' + terceiraNota + pularLinha);
+        }
+      
+
+            var soma = primeiraNota + segundaNota + terceiraNota;
+            
+
+            var media = (primeiraNota + segundaNota + terceiraNota) / 3;
+            
+
+            if(isNaN(soma)){
+                document.write('<h3 style="color: red;"> Sem nota suficiente para fazer a soma </h3> '+  pularLinha);
+            } else{
+                document.write('Soma das notas: ' + soma + pularLinha);
+            }
+
+            if(isNaN(media)){
+                document.write('<h3 style="color: red;"> Sem nota suficiente para fazer a média</h3> '+  pularLinha);
+            } else {
+                document.write('Média das notas: ' + media + pularLinha);
+            }
+            if (soma >= 60) {
+                document.write('<h1> Você foi aprovado </h1>' + pularLinha);
+            } else {
+               document.write('<h1 style="color: red;" > Você foi reprovado </h1>' + pularLinha);
+           
+            }
+
+    </script>
+
+</body>
+
+</html>

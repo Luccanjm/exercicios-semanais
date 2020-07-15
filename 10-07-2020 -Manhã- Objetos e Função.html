@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos e Função</title>
+</head>
+<body>
+    <script>
+        var celular = { 
+            modelo:"Iphone 7",
+            cor:"black",
+            tamanho:"6,5 x 13,5",
+            aplicativos:["Whatsapp","Facebook","Twitter","Teams"],
+            desbloqueado: true,
+            valor: 2000.00
+                      };
+        
+        var turma = {
+            nome:"T1",
+            materias:[
+                {nome:"Lógica de programação", cargahoraria: 40},
+                {nome:"HTML5", cargahoraria: 30 }
+            ], alunos:["Lucca","Leandro","Juliana","Karla"]
+        } 
+        //variavel.modelo -> para ver o modelo
+        //variavel.cor -> para ver a cor
+        //variavel.tamanho -> parar ver o tamanho
+        /* 
+            Objetos javascript: São uma representação de coisas ou objetos reais em forma de código.
+
+
+
+        */
+    //     //Exemplo da função no javascript
+    // function mostrarAlerta(){
+    //     //Aqui dentro é o código que será executado, quando essa função for chamada
+    // }
+    
+        function mostrarAlerta(){
+            alert('Fui chamado por outra função.');
+            document.write('Fui chamado por outra função. <br> ')
+            var numero = parseInt(prompt('Digite um número: '))
+            var conta = 2*20*55 * numero ; 
+            document.write('2*20*55*' + numero + '=' + conta+ '<br>');
+            var variavel = 'variavel';
+            document.write(`${variavel}dentro texto`) 
+
+        }
+        function mostrarAlerta2(texto){
+            alert(texto);
+        }
+
+    
+        function parouimpar(numero){
+          
+            if(numero % 2 == 0){
+                return 'Par'; //sai da função devolvendo esse texto 'Par'
+            }else{
+                return 'Ímpar';
+            }
+
+        }
+        var resultado = parouimpar(prompt('Digite um número: ')) ;
+        mostrarAlerta2(resultado);
+            
+        function obterDados(){
+            return c = a + b;
+        }
+
+          
+    </script>
+    
+</body>
+</html>
